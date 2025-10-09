@@ -1,7 +1,7 @@
 import static java.lang.Math.*;
 
 // 26442
-public class Lab1 {
+class Lab1 {
     public static void main(String[] args) {
         short a[] = new short[9];
         for (int i = 0; i <= 8; i++) {
@@ -38,8 +38,7 @@ public class Lab1 {
     public static void printMatrix(double[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                String str = String.format("%7.4f ", matrix[i][j]);
-                System.out.print(str);
+                System.out.printf("%7.4f ", matrix[i][j]);
             }
             System.out.println();
         }
